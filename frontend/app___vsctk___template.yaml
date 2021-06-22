@@ -1,0 +1,9 @@
+Resources:
+  frontend:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: src/components/ProfileView.ProfileView
+      CodeUri: 'C:/Users/kang/Desktop/project2/frontend'
+      Runtime: nodejs14.x
+      Environment:
+        Variables: {}

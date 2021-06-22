@@ -1,0 +1,59 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^1.6.3",
+    "@closeio/use-infinite-scroll": "^1.0.0",
+    "@emotion/react": "11",
+    "@emotion/styled": "11",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.15.2",
+    "antd-img-crop": "^3.14.1",
+    "axios-hooks": "^2.6.1",
+    "framer-motion": "4",
+    "global": "^4.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-google-login": "^5.2.2",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-moment": "^1.1.1",
+    "react-player": "^2.9.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-timestamp": "^5.1.0",
+    "redux": "^4.1.0",
+    "sass": "^1.32.12",
+    "use-reducer-with-side-effects": "^2.2.0",
+    "video-react": "^0.14.1",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync ./bulid s3://ngg-react-host --profile=newKang"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://15.164.104.62:8000"
+}
